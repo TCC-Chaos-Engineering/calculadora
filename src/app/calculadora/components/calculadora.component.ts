@@ -29,8 +29,7 @@ export class CalculadoraComponent implements OnInit {
   adicionarNumero(numero: string): void {
     if (this.operacao === null) {
       this.numero1 = this.concatenarNumero(this.numero1, numero);
-    }
-    else {
+    } else {
       this.numero2 = this.concatenarNumero(this.numero2, numero);
     }
   }
@@ -41,13 +40,13 @@ export class CalculadoraComponent implements OnInit {
       numAtual = '';
     }
 
-    if (numConcat === '.' && numAtual === '') {
-      return '0.';
-    }
+    // if (numConcat === '.' && numAtual === '') {
+    //   return '0.';
+    // }
 
-    if (numConcat === '.' && numAtual.indexOf('.') > -1) {
-      return numAtual;
-    }
+    // if (numConcat === '.' && numAtual.indexOf('.') > -1) {
+    //   return numAtual;
+    // }
 
     return numAtual + numConcat;
   }

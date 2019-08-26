@@ -26,9 +26,9 @@ export class CalculadoraService {
 
   /**
    * Calcula dois números dado a operação.
-   * @param n1 
-   * @param n2 
-   * @param operacao 
+   * @param1 n1
+   * @param2 n2
+   * @param3 operacao
    */
 
   calcular(n1: number, n2: number, operacao: string): number {
