@@ -40,13 +40,13 @@ export class CalculadoraComponent implements OnInit {
       numAtual = '';
     }
 
-    // if (numConcat === '.' && numAtual === '') {
-    //   return '0.';
-    // }
+    if (numConcat === '.' && numAtual === '') {
+      return '0.';
+    }
 
-    // if (numConcat === '.' && numAtual.indexOf('.') > -1) {
-    //   return numAtual;
-    // }
+    if (numConcat === '.' && numAtual.indexOf('.') > -1) {
+      return numAtual;
+    }
 
     return numAtual + numConcat;
   }
