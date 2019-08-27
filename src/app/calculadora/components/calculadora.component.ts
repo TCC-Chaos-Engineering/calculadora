@@ -36,17 +36,17 @@ export class CalculadoraComponent implements OnInit {
 
   concatenarNumero(numAtual: string, numConcat: string): string {
 
-    if (numAtual === '0' || numAtual === null) {
-      numAtual = '';
-    }
+    numAtual = '0' || null ? '' : numAtual += numConcat;
 
-    if (numConcat === '.' && numAtual === '') {
-      return '0.';
-    }
+    // numConcat = '0.'
 
-    if (numConcat === '.' && numAtual.indexOf('.') > -1) {
-      return numAtual;
-    }
+    // if (numConcat === '.' && numAtual === '') {
+    //   return '0.';
+    // }
+
+    // if (numConcat === '.' && numAtual.indexOf('.') > -1) {
+    //   return numAtual;
+    // }
 
     return numAtual + numConcat;
   }

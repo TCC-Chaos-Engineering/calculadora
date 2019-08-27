@@ -16,11 +16,6 @@ export class CalculadoraService {
   static readonly DIVISAO: string = '/';
   static readonly MULTIPLICACAO: string = '*';
 
-  // const soma: string = '+';
-  // const subtracao: string = '-';
-  // const divisao: string = '/';
-  // const multiplicacao: string = '*';
-
   constructor() {
   }
 
