@@ -38,11 +38,13 @@ export class CalculadoraComponent implements OnInit {
 
     numAtual = numAtual === '0' || null ? '' : numAtual += numConcat;
 
-    // if (numConcat === '.' && numAtual === '') numConcat = '0.';
+    if (numConcat === '.' && numAtual === '') {
+      numConcat = '0.';
+    }
 
-    // if (numConcat === '.' && numAtual.indexOf('.') > -1) {
-    //   return numAtual;
-    // }
+    if (numConcat === '.' && numAtual.indexOf('.') > -1) {
+      return numAtual;
+    }
 
     return numAtual + numConcat;
   }
