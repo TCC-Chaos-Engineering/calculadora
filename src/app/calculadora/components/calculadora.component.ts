@@ -36,7 +36,9 @@ export class CalculadoraComponent implements OnInit {
 
   concatenarNumero(numAtual: string, numConcat: string): string {
 
-    numAtual = numAtual === '0' || null ? '' : numAtual += numConcat;
+    if (numAtual === '0' || numAtual === null) {
+      numAtual = '';
+    }
 
     if (numConcat === '.' && numAtual === '') {
       numConcat = '0.';
